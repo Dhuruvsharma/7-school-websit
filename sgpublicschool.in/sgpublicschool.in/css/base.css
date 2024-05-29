@@ -1,0 +1,224 @@
+
+/* --------------------------------------------
+	RESET DEFAULT BROWSER CSS SETTINGS
+-------------------------------------------- */
+html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;*/
+	font-size:14px;
+	/*line-height:18px;*/
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* body { line-height: 1; } */
+/* ol, ul { list-style: none; } MEM 05/13/10 */
+ul { list-style: none; }
+ol { list-style-position: inside; list-style-image: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+/* remember to define focus styles! */
+:focus { outline: 0; }
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+
+
+/* --------------------------------------------
+				GLOBAL CLASSES
+-------------------------------------------- */
+.clear     				{ clear:both;}
+.clear-left 			{ clear: left; }
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix
+{
+    position: relative;
+    display: inline-block;
+}
+
+.img-small-wrapper {
+  float: right;
+  width: 30%;
+  margin: 0 0.5208333333333333%;
+  margin: 0 0px 18px 10px;
+  padding: 9px;
+  border: 1px solid #d1d1d1;
+}
+
+/* --------------------------------------------
+
+				GLOBAL CLASSES
+-------------------------------------------- */
+.center         		{ margin: 0 auto;}
+.block 					{ display: block; }
+.space          		{ display: block; height: 5px; }
+.float-left, .left    	{ float:left; }
+.float-right, .right   	{ float:right; }
+ 
+.text-left     			{ text-align:left; }
+.text-right    			{ text-align:right; }
+.text-center   			{ text-align:center; }
+.text-justify  			{ text-align:justify; }
+ 
+.normal					{ font-weight: normal; } 
+.bold          			{ font-weight:bold; }
+.italic        			{ font-style:italic; }
+.underline     			{ border-bottom:1px solid; }
+.highlight     			{ background:#ffc; }
+ 
+.img-left      			{ float:left; margin:4px 8px 12px 0; }
+.img-right     			{ float:right; margin:4px 0 4px 10px; }
+
+.nopadding     			{ padding:0; }
+.nomargin				{ margin:0; }
+.noindent      			{ margin-left:0; padding-left:0; }
+.nobullet      			{ list-style:none; list-style-image:none; list-style-type: none;}
+.noborder 				{ border:none; }
+.hide					{ display: none;}
+.nobackground 			{ background:none; }
+.altfont 				{ font-family:Arial, Helvetica, sans-serif; }
+
+.absolute-container   	{ position:relative; }
+.black 					{ color: #000; }
+.last-li 				{ border-bottom: 0; }
+.module-border 			{ border: 2px solid #eee; }
+
+.gray 					{ color: #888;}
+.black 					{ color: #000;font-weight: bold;}
+.red 					{ color:#ca0319 !important; }
+.small-gray-text 		{ font-size: 11px; color: #666; }
+
+/* Picture border for thumbnail pics */
+.pic-border 			{ padding: 5px; margin: 0 8px 0 0; border: 1px solid #ddd; }
+
+/* class that caps the bottom of the page */
+.bottom 				{ padding-bottom: 20px; border-bottom:1px solid #b3ae0b; }
+
+/* pagination, mostly for accordion lists */
+.pagination 			{ float:right; }
+	
+/* --------------------------------------------
+				links 
+-------------------------------------------- */
+a,
+a:visited,
+a:active {
+	color: #135b83;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+a:hover { 
+	color: #003260;
+	text-decoration: none;
+}
+	
+	
+/* Call to Action Arrow Buttons
+---------------------------------------------- */
+.cta-btn {
+	width: auto; 
+	float: left; 
+	color: #fff !important;
+	display: block;
+	padding: 0 12px 0 6px;
+	font-family: trebuchet ms, sans-serif;
+	font-size:11px !important;
+	height: 15px;
+	line-height: 14px;
+	font-weight: bold !important;
+	text-transform: uppercase;
+}
+
+/* Yellow general
+------------------------------------ */
+.yellow-cta {
+	background: #ce3c4f url(../images/cta-arrows-white.png) right -60px no-repeat;
+}
+.yellow-cta:hover {
+	background: #b83748 url(../images/cta-arrows-white.png) right -75px no-repeat;
+}
+
+.cta {
+	background: #f4c52f url(../images/cta-arrows-white.png) right 0 no-repeat;
+}
+.cta:hover {
+	background: #d49d15 url(../images/cta-arrows-white.png) right -15px no-repeat;
+}
+	
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;*/
+	font-size:12px;
+	/*line-height:18px;*/
+	vertical-align: baseline;
+	background: transparent;
+	text-align:left
+}
+
+body { line-height: 1; }
+
+/* --------------------------------------------
+				global settings 
+-------------------------------------------- */
+body {
+	font-family: trebuchet ms, sans-serif;
+	/*font-size: 62.5%;*/ /*Sets all fonts to 10px*/
+	font-size:12px;
+	/*background: #f1eee4 url(/images/main-page-bg.png) top left repeat-x;*/
+	background: #f1eee4;
+	color: #222222;
+	text-align: left; /* center page for ie */
+}
+h2 {
+	background: url(../images/arrow-red.png) left no-repeat;
+	border-bottom: 1px solid #ddd;
+	color: #333;
+	font-size: 18px;
+	/*letter-spacing: -.2px;*/
+	line-height: 21px;
+	margin: 13px 0 10px 0;
+	padding: 0px 0 5px 10px;
+	/*Original
+	margin: 10px 0 10px 0;
+	padding: 6px 0 5px 10px;*/
+}
+
+h4 {
+	color: #b83748;
+	font-size: 16px;
+	/*letter-spacing: -.2px;*/
+	line-height: 21px;
+	margin: 13px 0 0px 0;
+	padding: 0px 0 5px 0px;
+	/*Original
+	margin: 10px 0 10px 0;
+	padding: 6px 0 5px 10px;*/
+}
+
